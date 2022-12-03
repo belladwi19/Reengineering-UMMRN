@@ -84,9 +84,30 @@
                     <a class="nav-link page-scroll" href="index.php?page=cops">COMMUNITIES OF PRACTICE</a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.php?page=projects">PROJECTS</a>
-                </li>
+                </li> -->
+
+                <?php
+                    if($_SESSION[user]){
+                        echo"
+                            <li class='nav-item dropdown'>
+                                <span class='nav-link dropdown-toggle page-scroll' id='navbarDropdown' role='button' aria-haspopup='true' aria-expanded='false'>PROJECTS</span>
+                                <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                                    <a class='dropdown-item' href='index.php?page=projects'><span class='item-text'>PROJECTS</span></a>
+                                    <div class='dropdown-items-divide-hr'></div>
+                                    <a class='dropdown-item' href='index.php?page=submitnewproposal'><span class='item-text'>SUBMIT NEW PROPOSAL PROJECT</span></a>
+                                </div>
+                            </li>         
+                        ";
+                    }else{
+                        echo"
+                        <li class='nav-item'>
+                            <a class='dropdown-item' href='index.php?page=projects'><span class='item-text'>PROJECTS</span></a>
+                        </li>
+                        ";
+                    }
+                ?>           
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.php?page=cfps">CALL FOR PROJECTS</a>
@@ -97,6 +118,8 @@
                             <li class='nav-item dropdown'>
                                 <span class='nav-link dropdown-toggle page-scroll' id='navbarDropdown' role='button' aria-haspopup='true' aria-expanded='false'>MY ACCOUNT</span>
                                 <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                                    <a class='dropdown-item' href='index.php?page=profile'><span class='item-text'>PROFILE</span></a>
+                                    <div class='dropdown-items-divide-hr'></div>
                                     <a class='dropdown-item' href='index.php?page=notifications'><span class='item-text'>NOTIFICATIONS</span></a>
                                     <div class='dropdown-items-divide-hr'></div>
                                     <a class='dropdown-item' href='logout.php'><span class='item-text'>LOGOUT</span></a>
