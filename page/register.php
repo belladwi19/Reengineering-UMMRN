@@ -1,6 +1,6 @@
         <div class="container" style="margin-top:5%; margin-bottom:5%;">
             <div class="row">            
-            <div style="width:25%"></div>
+            <div style="width:30%"></div>
                 <div class="col-lg-5">
                     <div class="text-container">
                         <h2 style="text-align: center">Register Here!</h2>
