@@ -132,8 +132,8 @@
     ?>
     
     <!-- Footer -->
-    <div class="footer">
-    </div>
+    <!-- <div class="footer">
+    </div> -->
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">

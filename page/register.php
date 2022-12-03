@@ -48,7 +48,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with UMMRN's Terms and Serices</a> 
+                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" data-toggle="modal" data-target="#myModal" required>I agree with UMMRN's Terms and Serices</a> 
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
@@ -62,19 +62,29 @@
                         </form>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-7"> 
-                        <h2>Terms and Services</h2>
-                        <hr />
-                        <p style="line-height:35px;"><b>Please read carefully before using the UMMRN Services:</b> <br />
-                        1. UMMRN only provides service, not content. UMMRN is not responsible for all data that has been submitted to the application.<br />
-                        2. The member must be registered at Universitas Muhammadiyah Malang, either as lecturers of students. <br />
-                        3. The members must provide valid data. <br />
-                        4. UMMRN has the right to stop or continue the service.<br />
-                        5. UMMRN is under the authority of Universitas Muhammadiyah Malang.
-                        </p>
-                        
-                </div> <!-- end of col -->
             </div> <!-- end of row -->
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Terms and Services</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p style="line-height:35px;"><b>Please read carefully before using the UMMRN Services:</b> <br />
+                            1. UMMRN only provides service, not content. UMMRN is not responsible for all data that has been submitted to the application.<br />
+                            2. The member must be registered at Universitas Muhammadiyah Malang, either as lecturers of students. <br />
+                            3. The members must provide valid data. <br />
+                            4. UMMRN has the right to stop or continue the service.<br />
+                            5. UMMRN is under the authority of Universitas Muhammadiyah Malang.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="form-control-submit-button" data-dismiss="modal">Close Terms and Services</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> <!-- end of container -->
 <script type="text/javascript">
     var ps=document.getElementById("psws");
