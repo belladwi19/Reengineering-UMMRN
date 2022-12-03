@@ -1,4 +1,4 @@
-        <div class="container" style="margin-top:5%; margin-bottom:5%;">
+        <div class="container" style="margin-top:5%; padding-bottom:100px;">
             <div class="row">            
             <div style="width:30%"></div>
                 <div class="col-lg-5">

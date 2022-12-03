@@ -130,7 +130,8 @@
             include"page/home.php";
         }
     ?>
-    
+</body>
+<div id="footers" style="position:fixed; bottom:0; width:100%;">
     <!-- Footer -->
     <!-- <div class="footer">
     </div> -->
@@ -157,5 +158,5 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-</body>
+</div>
 </html>
