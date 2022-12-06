@@ -24,7 +24,7 @@
             <div class="col-lg-6">
                 <?php
                     echo"
-                        <form name='submitNewProposal' method='POST' action='index.php?page=submitnewproposalaction'>
+                        <form name='submitNewProposal' method='POST' enctype='multipart/form-data' action='index.php?page=submitnewproposalaction'>
                             <div class='form-group'>
                                 <input name='judul' class='form-control-input' id='cmessage' required></input>
                                 <label class='label-control' for='cmessage'>Judul</label>
@@ -38,8 +38,8 @@
                             </div>
                             
                             <div class='form-group'>
-                                <input name='dokumen' class='form-control-input' id='cmessage' required></input>
-                                <label class='label-control' for='cmessage'>Link Dokumen</label>
+                                <input type='file' class='form-control-input' id='cmessage' required>
+                                <label class='label-control' for='cmessage'>Dokumen</label>
                                 <div class='help-block with-errors'></div>
                             </div>
                             <div class='form-group'>
