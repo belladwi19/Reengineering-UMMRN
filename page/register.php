@@ -1,4 +1,4 @@
-        <div class="container" style="margin-top:5%; padding-bottom:100px;">
+<div class="container" style="margin-top:5%; padding-bottom:100px;">
             <div class="row">            
             <div style="width:30%"></div>
                 <div class="col-lg-5">
@@ -45,6 +45,11 @@
                             <div class="form-group">
                                 <textarea class="form-control-textarea" name="description" id="cmessage" required></textarea>
                                 <label class="label-control" for="cmessage">About you</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" name="portofolio" id="cmessage" required></textarea>
+                                <label class="label-control" for="cmessage">Portofolio</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group checkbox">
