@@ -47,6 +47,11 @@
                                 <label class="label-control" for="cmessage">About you</label>
                                 <div class="help-block with-errors"></div>
                             </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" name="portofolio" id="cmessage" required></textarea>
+                                <label class="label-control" for="cmessage">Portofolio</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
                             <div class="form-group checkbox">
                                 <input type="checkbox" id="cterms" value="Agreed-to-Terms" data-toggle="modal" data-target="#myModal" required>I agree with UMMRN's Terms and Serices</a> 
                                 <div class="help-block with-errors"></div>

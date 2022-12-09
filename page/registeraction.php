@@ -5,6 +5,7 @@
 	$phone=$_POST['phone'];
 	$email=$_POST['email'];
 	$descripition=$_POST['description'];
+    $porto=$_POST['portofolio'];
 	$usr=$_POST['usr'];
 	$psw=$_POST['psw'];
     $pswmd5=md5($psw);
@@ -15,7 +16,7 @@
 	$file=rand(100,10000)."-pengguna.$tipe";
     $folder="foto/";
      */
-	$sql="insert into students(name,nim,phone,email,usr,psw,description) values('$name','$nim','$phone','$email','$usr','$pswmd5','$description')";
+	$sql="insert into students(name,nim,phone,email,usr,psw,description,portofolio) values('$name','$nim','$phone','$email','$usr','$pswmd5','$description','$porto')";
 	$query=mysqli_query($koneksi,$sql);
     if($query){
         echo"
