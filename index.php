@@ -21,7 +21,7 @@
 	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
-
+    
     <!-- Website Title -->
     <title>UMMRN - UMM Research Networks</title>
     
@@ -52,7 +52,8 @@
         $navi=$_GET['page'];
         if(!empty($navi)){
             $navigate="'height:100px; background-color:#113448'";
-        }else{
+        }
+        else{
             $navigate="";
         }
     ?>
@@ -118,7 +119,7 @@
                             <li class='nav-item dropdown'>
                                 <span class='nav-link dropdown-toggle page-scroll' id='navbarDropdown' role='button' aria-haspopup='true' aria-expanded='false'>MY ACCOUNT</span>
                                 <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                                    <a class='dropdown-item' href='index.php?page=profile'><span class='item-text'>PROFILE</span></a>
+                                    <a class='dropdown-item' href='index.php?page=profile&id=$_SESSION[userid]'><span class='item-text'>PROFILE</span></a>
                                     <div class='dropdown-items-divide-hr'></div>
                                     <a class='dropdown-item' href='index.php?page=notifications'><span class='item-text'>NOTIFICATIONS</span></a>
                                     <div class='dropdown-items-divide-hr'></div>
